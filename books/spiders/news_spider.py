@@ -26,7 +26,7 @@ response.xpath('//a[@class="u-faux-block-link__overlay js-headline-text"]/@href'
 """
 
 class QuotesSpider(scrapy.Spider):
-    name = "news"
+    name = "books"
     counter = 0
     def start_requests(self):
         
