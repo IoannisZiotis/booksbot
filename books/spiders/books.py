@@ -1,5 +1,5 @@
 import scrapy
-import nltk
+
 
 """
 # response.xpath(
