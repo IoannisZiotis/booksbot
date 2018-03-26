@@ -58,7 +58,7 @@ class QuotesSpider(scrapy.Spider):
         title = response.xpath('//h1[@class="content__headline "]/text()').extract()
         if  len(title)!=0:
             # self.counter += 1
-            filename = 'html/%s.html' % title[0].strip('\n')
+            filename = '%s.html' % title[0].strip('\n')
             text = ''.join(text)
             with open(filename, 'w') as f:
                 f.write(text)
