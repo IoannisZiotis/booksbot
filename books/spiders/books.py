@@ -60,5 +60,5 @@ class QuotesSpider(scrapy.Spider):
             # self.counter += 1
             filename = '%s.html' % title[0].strip('\n')
             text = ''.join(text)
-            with open(filename, 'w') as f:
+            with open(filename, 'w',encoding='utf-8') as f:
                 f.write(text)
